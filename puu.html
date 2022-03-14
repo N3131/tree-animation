@@ -1,0 +1,108 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Puu</title>
+</head>
+<style>
+    .bg {
+        height: 100vh;
+        width: 60vw;
+    }
+
+    .tree {
+        height: 100%;
+        width: 60vw;
+        position: absolute;
+        opacity: 0;
+    }
+
+    .paljas {
+        z-index: 10;
+        opacity: 1;
+    }
+
+    .kevat {
+        animation: fadekevat 40s linear infinite;
+        z-index: 11;
+    }
+
+    .kesa {
+        animation: fadekesa 40s linear infinite;
+        z-index: 12;
+    }
+
+    .syksy {
+        animation: fadesyksy 40s linear infinite;
+        z-index: 13;
+    }
+
+    .talvi {
+        animation: fadetalvi 40s linear infinite;
+        z-index: 14;
+    }
+
+    @keyframes fadeout {
+        0% {opacity: 1;}
+        50% {opacity: 1;}
+        100% {opacity: 0;}
+    }
+
+    @keyframes fadekevat {
+        0% {opacity: 0;}
+        10% {opacity: 0;}
+        20% {opacity: 1;}
+        30% {opacity: 1;}
+        40% {opacity: 0;}
+        100% {opacity: 0;}
+    }
+
+    @keyframes fadekesa {
+        0% {opacity: 0;}
+        30% {opacity: 0;}
+        40% {opacity: 1;}
+        50% {opacity: 1;}
+        60% {opacity: 0;}
+        100% {opacity: 0;}
+    }
+
+    @keyframes fadesyksy {
+        0% {opacity: 0;}
+        50% {opacity: 0;}
+        60% {opacity: 1;}
+        70% {opacity: 1;}
+        80% {opacity: 0;}
+        100% {opacity: 0;}
+    }
+
+    @keyframes fadetalvi {
+        0% {opacity: 0;}
+        70% {opacity: 0;}
+        80% {opacity: 1;}
+        90% {opacity: 1;}
+        100% {opacity: 0;}
+    }
+
+
+</style>
+<body>
+
+    <div class="bg">
+        <object class="paljas tree" type="image/svg+xml" data="paljas.svg">
+            <img src="paljas.svg" />
+        </object>
+        <object class="kevat tree" type="image/svg+xml" data="kevat.svg">
+            <img src="kevat.svg" />
+        </object>
+        <object class="kesa tree" type="image/svg+xml" data="kesa.svg">
+            <img src="kesa.svg" />
+        </object>
+        <object class="syksy tree" type="image/svg+xml" data="syksy.svg">
+            <img src="syksy.svg" />
+        </object>
+        <object class="talvi tree" type="image/svg+xml" data="talvi.svg">
+            <img src="talvi.svg" />
+        </object>
+    </div>
+
+</body>
+</html> 
